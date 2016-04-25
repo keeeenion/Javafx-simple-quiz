@@ -104,8 +104,7 @@ public class Quiz extends Application {
 	    factory.setIgnoringElementContentWhitespace(true);
 	    try {	
 	         File inputFile = new File("src/quiz/Data.xml");
-	         DocumentBuilderFactory dbFactory 
-	            = DocumentBuilderFactory.newInstance();
+	         DocumentBuilderFactory dbFactory  = DocumentBuilderFactory.newInstance();
 	         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 	         Document doc = dBuilder.parse(inputFile);
 	         doc.getDocumentElement().normalize();
